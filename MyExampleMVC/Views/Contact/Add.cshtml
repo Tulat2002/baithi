@@ -1,0 +1,34 @@
+﻿@model MyExampleMVC.Models.AddContactViewModel
+
+@{
+}
+
+<h1>Add Contact</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">ContactName</label>
+        <input type="text" class="form-control" asp-for="ContactName">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">ContactNumber</label>
+        <input type="number" class="form-control" asp-for="ContactNumber">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">GroupName</label>
+        <input type="text" class="form-control" asp-for="GroupName">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">HireDate</label>
+        <input type="date" class="form-control" asp-for="HireDate ">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Birthday</label>
+        <input type="date" class="form-control" asp-for="Birthday">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
